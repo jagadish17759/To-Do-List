@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.Mother {
+    background-color: #2c3e50;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.Child {
+    max-width: 600px;
+    background-color: #ecf0f1;
+    margin: 100px auto;
+    padding: 40px 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Child h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #34495e;
+}
+
+.Gchild {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+#tb {
+    flex: 1;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    color: #34495e;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#tb:focus {
+    outline: none;
+    border-color: #2980b9;
+}
+
+button {
+    border: none;
+    padding: 12px 20px;
+    color: #ffffff;
+    background-color: #27ae60;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #219150;
+}
+
+ul {
+    padding-left: 0;
+}
+
+ul li {
+    list-style: none;
+    padding: 12px 8px 12px 40px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    font-size: 18px;
+    color: #34495e;
+    transition: background-color 0.2s;
+}
+
+ul li:hover {
+    background-color: #dcdcdc;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(circle-shape-doodle-outline-colouring_1639-30821.avif);
+    background-size: cover;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.tick {
+    color: #e74c3c;
+    text-decoration: line-through;
+}
+
+ul li.tick::before {
+    background-image: url(vector-green-check-mark-icon-symbol-logo-circle-tick-symbol-green-color-vector-illustration_488400-331.avif);
+}
+
+ul li span {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #e74c3c; /* Trash icon color */
+    transition: color 0.3s;
+}
+
+ul li span:hover {
+    color: #c0392b; /* Darker red on hover */
+}
